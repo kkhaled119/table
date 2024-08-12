@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #333;
+  color: #ddd;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  color: #ddd;
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: right;
+}
+
+.container .head p {
+  color: red;
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+}
+.container .head h2 {
+  display: flex;
+  justify-content: right;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  table {
+    width: 100%;
+    height: 100%;
+  }
+  .container .head p {
+    transform: translateX(50px);
+  }
+}
